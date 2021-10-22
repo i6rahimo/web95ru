@@ -1,0 +1,148 @@
+.header {
+    &__logo {
+        font-weight: 400;
+        font-size: 48px;
+        font-family: 'Montserrat', sans-serif;
+        a {
+            color: #000;
+        }
+    }
+    &__wrapper {
+        box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.15);
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 19px 0 18px 0;
+    }
+    &__menu {
+        &-list {
+            display: flex;
+            align-items: center;
+        }
+        &-link{
+            color: #000;
+            padding-bottom: 5px;
+            transition: all .3s;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        &-link:hover{
+            color: $blue;
+            border-bottom: 1px solid $blue;
+            
+        }
+    }
+    &__btn {
+        display: none;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+        border: none;
+        background: none;
+        position: relative;
+        margin-right: 20px;
+        cursor: pointer;
+        span {
+            display: block;
+            background-color: $blue;
+            width: 100%;
+            height: 7px;
+            border-radius: 5px;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+                
+            }
+        }
+    }
+}
+.header__menu-item:not(:last-child) {
+    margin-right: 30px;
+}
+.btn__number {
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 31px;
+    background-color: $blue;
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    font-weight: 400;
+    &::before {
+        content: url(../../img/phone.svg);
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+    }
+    &:hover{
+        color:#fff;
+        border-bottom: none;
+    }
+    
+}
+.btn__span1.active {
+    transform: translateY(23px) rotate(37deg);
+    transition: all .5s;
+}
+.btn__span2.active {
+    width: 0%;
+    transition: all .1s;
+}
+.btn__span3.active {
+    transition: all .5s;
+    transform: rotate(-29deg) translateY(-11px);
+}
+
+.header {
+    
+    &__hero {
+        position: absolute;
+        background-image: url(../../img/headerbg.webp);
+        background-repeat: no-repeat !important;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+        z-index: -11;
+    }
+    &__hero-content {
+        display: flex;
+        margin-top: 40px;
+        align-items: center;
+    }
+    &__left {
+        margin-right: 43px;
+    }
+    &__title {
+        font-family: 'Roboto', sans-serif;
+    }
+    &__title-main {
+        font-weight: 400;
+        @include adaptiv-font(48, 24);
+        line-height: 56px;
+        padding-bottom: 15px;
+    }
+    &__title-submain {
+        font-weight: 400;
+        @include adaptiv-font(24, 16);
+        line-height: 28px;
+        padding-bottom: 15px;
+    }
+    &__title-submain::before{
+        content: url(../../img/chek.svg);
+        margin-right: 10px;
+    }
+    &__title-submainlast {
+        font-weight: 400;
+        @include adaptiv-font(18, 16);
+        line-height: 21px;
+        padding-bottom: 38px;
+        span {
+            color: $blue;
+        }
+        
+    }
+}

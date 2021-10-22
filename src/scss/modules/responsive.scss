@@ -1,0 +1,46 @@
+@media ( max-width: 1200px) {
+    .header {
+        &__btn {
+            display: block;
+
+        }
+        &__menu-list {
+            display: none;
+            flex-direction: column;
+            max-width: auto;
+            margin-top: 120px;
+            right: 0;
+            left: 0;
+            position: absolute;
+        }
+        &__menu-list.active {
+            display: flex;
+        }
+        &__menu-item {
+            margin-bottom: 70px;
+        }
+        &__menu-link {
+            font-size: 38px;
+            font-weight: 600;
+        }
+        .btn__number {
+            font-size: 20px;
+            &::before {
+                display: none;
+            }
+
+        }
+    }
+}
+@media (max-width: 970px) {
+    .header {
+        &__left {
+            margin-top: 150px;
+        }
+        &__right {
+            img {
+                display: none;
+            }
+        }
+    }
+}
