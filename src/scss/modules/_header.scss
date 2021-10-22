@@ -1,4 +1,6 @@
+
 .header {
+    height: 100vh;
     &__logo {
         font-weight: 400;
         font-size: 48px;
@@ -57,6 +59,16 @@
             }
         }
     }
+    &__hero {
+        position: absolute;
+        background-image: url(../../img/headerbg.webp);
+        background-repeat: no-repeat !important;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+        z-index: -11;
+    }
 }
 .header__menu-item:not(:last-child) {
     margin-right: 30px;
@@ -98,16 +110,6 @@
 
 .header {
     
-    &__hero {
-        position: absolute;
-        background-image: url(../../img/headerbg.webp);
-        background-repeat: no-repeat !important;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: auto;
-        z-index: -11;
-    }
     &__hero-content {
         display: flex;
         margin-top: 40px;

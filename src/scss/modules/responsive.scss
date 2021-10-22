@@ -34,12 +34,31 @@
 }
 @media (max-width: 970px) {
     .header {
+        height: 80vh;
         &__left {
             margin-top: 150px;
         }
         &__right {
             img {
                 display: none;
+            }
+        }
+    }
+    .expert {
+        &__wrapper {
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        &__left {
+            margin-right: 0;
+            margin-bottom: 50px;
+            &::before {
+                max-width: 100%;
+                max-height: 110%;
+            }
+            img {
+                width: 100%;
             }
         }
     }

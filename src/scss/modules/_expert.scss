@@ -1,0 +1,40 @@
+.expert {
+    padding: 76px 0 86px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        margin-right: 70px;
+        position: relative;
+ 
+        &::before {
+            content: '';
+            position: absolute;
+            max-width: 100%;
+            width: 116px;
+            height: 405px;
+            background: $blue;
+            margin-top: -15px;
+            margin-left: -15px;
+            border-radius: 5px 0px 0px 5px;
+            z-index: -1;
+
+        }
+       
+    }
+    &__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        @include adaptiv-font(36, 14);
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        line-height: 27px;
+        @include adaptiv-font(18, 8);
+
+    }
+}
