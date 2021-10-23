@@ -1,3 +1,17 @@
+@media (max-width: 1257px) {
+    .google {
+        &__wrapper {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__left {
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        
+        }
+    }
+}
 @media ( max-width: 1200px) {
     .header {
         &__btn {
@@ -60,6 +74,33 @@
             img {
                 width: 100%;
             }
+        }
+    }
+}
+@media (max-width: 855px) {
+    .prise__card:not(:last-child) {
+        margin-right: 0;
+    }
+}
+@media (max-width: 606px){
+    .google__btn {
+        display: none;
+    }
+}
+@media (max-width: 464px) {
+    .google {
+        &__right{
+            justify-content: center;
+            &-items {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+    }
+}
+@media (max-width: 624px) {
+    .google {
+        &__left {
+            margin-right: 0;
         }
     }
 }

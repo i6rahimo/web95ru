@@ -1,0 +1,90 @@
+.prise {
+    margin: 25px 0 49px;
+    font-family: 'Roboto',sans-serif;
+    &__title {
+        margin: 0 auto  ;
+        text-align: center;
+        width: 814px;
+        max-width: 100%;
+        padding-bottom: 61px;
+        &-main {
+            padding-bottom: 15px;
+            font-size: 36px;
+            line-height: 42px;
+        }
+        &-submain {
+            font-size: 16px;
+            span {
+                color: $blue;
+            }
+        }
+
+    }
+    &__cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__card {
+        width: 370px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        border: 2px solid #ECECEC;
+        margin-bottom: 20px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        &:hover {
+            border: 2px solid $blue;
+        }
+        &-inner {
+            padding: 50px 70px;
+            text-align: center;
+        }
+        &-title {
+            font-size: 24px;
+            font-weight: 500;
+            justify-content: center;
+            position: relative;
+            // border-bottom:  1px solid #ECECEC;
+            // // &::after {
+            // //     content: '';
+            // //     display: block;
+            // //     width: 114px;
+            // //     height: 1px;
+            // //     background-color:  #ECECEC;
+            // //     left: 10px;
+            // //     margin-top: 10px;
+            // //     position: absolute;
+            // // }
+        }
+        &-prise {
+            color: $blue;
+            font-size: 36px;
+            font-weight: 500;
+            padding: 35px 0;
+        }
+        &-subtitle {
+            padding-bottom: 40px;
+            br {
+                margin-bottom: 15px ;
+            }
+        }
+        &-btn {
+            background: $blue;
+            color: #fff;
+            box-shadow: 2px 4px 21px rgba(0, 0, 0, 0.15);
+            border: none;
+            border-radius: 15px;
+            padding: 8px 38px 8px 41px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: ease-in-out .3s;
+            &:hover {
+                background: $blackblue;
+            }
+        }
+    }
+
+}

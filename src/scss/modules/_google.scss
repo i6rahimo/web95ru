@@ -1,0 +1,58 @@
+.google {
+    background: url(../../img/googlebg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding: 18px 0 17px;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    &__left {
+        margin-right: 119px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            padding-bottom: 10px;
+            
+            line-height: 28px;
+        }
+        &-title {
+            margin-left: 26px;
+        }
+        &-text2 {
+            align-items: center;
+        }
+        &-text2::after {
+            content: url(../../img/star.svg);
+            margin-left: 10px;
+        }
+    }
+    &__right {
+        &-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            max-width: 560px;
+        }
+        &-item {
+            font-size: 18px;
+        }
+        &-item::before {
+            content: url(../../img/ckewhite.svg);
+            margin-right: 10px;
+        }
+
+    }
+    &__btn {
+        position: absolute;
+        right: 0;
+        bottom: -15px;
+        background: $green !important;
+    }
+}
