@@ -1,0 +1,67 @@
+.review {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 48px;
+    &__title {
+        font-size: 36px;
+        text-align: center;
+        font-weight: 500;
+    }
+    &__items-wrapper {
+        margin-top: 44px;
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 279px;
+        max-width: 100%;
+        border-radius: 5px;
+        box-shadow: 1px 1px 15px rgba(14, 58, 82, 0.1);
+        transition: ease-in .2s;
+        cursor: pointer;
+        margin-bottom: 20px;
+        &:not(:last-child) {
+            margin-right: 31px;
+        }
+        &:hover {
+            box-shadow: 7px -12px 55px rgba(14, 58, 82, 0.1);
+            
+        }
+        &-inner {
+            padding: 23px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-about {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 23px;
+        }
+        &-person {
+            display: flex;
+            align-items: center;
+        }
+        &-name {
+            display: flex;
+            flex-direction: column;
+            padding-left: 11px;
+            font-weight: 700;
+            &::after {
+                content: url(../../img/stars.svg);
+                padding-top: 6px;
+            
+            }
+        }
+        &-text {
+            font-weight: 400;
+        }
+        &-date {
+            font-size: 9px;
+            padding-top: 6px;
+            color: #0E3A52;
+        }
+    }
+
+}

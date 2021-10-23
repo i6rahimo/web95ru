@@ -82,6 +82,11 @@
         margin-right: 0;
     }
 }
+@media (max-width: 621px) {
+    .review__item:not(:last-child) {
+        margin-right: 0;
+    }
+}
 @media (max-width: 606px){
     .google__btn {
         display: none;
