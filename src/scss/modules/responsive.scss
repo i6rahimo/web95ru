@@ -45,6 +45,22 @@
 
         }
     }
+    .skills {
+        
+        &__down {
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            &-left {
+                h3, p {
+                    text-align: center;
+                }
+            }
+            &-middle {
+                display: none;
+            }
+        }
+    }
 }
 @media (max-width: 970px) {
     .header {
