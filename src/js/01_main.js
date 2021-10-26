@@ -1,12 +1,10 @@
-const burger = document.getElementsByClassName('header__btn')[0]
-const nav = document.getElementsByClassName('header__menu-list')[0]
+const burger  = document.getElementsByClassName('header__btn')[0]
+const nav     = document.getElementsByClassName('header__menu-list')[0]
 const arrows1 = document.getElementsByClassName('btn__span1')[0]
 const arrows2 = document.getElementsByClassName('btn__span2')[0]
 const arrows3 = document.getElementsByClassName('btn__span3')[0]
-const accord = document.getElementsByClassName('help__hero-item')[0]
-const accordShow = document.getElementsByClassName('help__hero-addtext')[0]
-const accord = document.querySelectorAll    
-
+const accords  = document.getElementsByClassName('help__hero-content')
+// const accordShow = document.getElementsByClassName('help__hero-content')[0]
 burger.addEventListener('click', ()=> {
     nav.classList.toggle('active')
     arrows1.classList.toggle('active')
@@ -15,6 +13,12 @@ burger.addEventListener('click', ()=> {
 
 })
 
-accord.addEventListener('click', ()=> {
-    accordShow.classList.toggle('show')
-})
+// accord.addEventListener('click', ()=> {
+//     accordShow.classList.toggle('show')
+// })
+
+// for( accords in accord ){
+//     accord.addEventListener('click', function(){
+//         this.classList.toggle('show')
+//     })
+// }

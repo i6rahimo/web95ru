@@ -31,23 +31,35 @@
             flex-direction: column;
         }
         &-item {
-            padding: 10px 15px;
-            background: #a4b4bf;
-            color: #fff;
             cursor: pointer;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
         &-header {
-            padding: 10px 15px;
-            background: #a4b4bf;
-            color: rgb(233, 30, 30);
-            cursor: pointer;
+            padding: 12px 10px;
+            background-color: #ECECEC;
+            border-radius: 5px;
+            width: 1030px;
+            max-width: 100%;
+            height: auto;
+            position: relative;
         }
+        &-header::after {
+            content: url(../../img/helparrow.svg);
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
         &-content {
-            background: rgb(98, 0, 255);
-            transition: opacity .4s ease;
-            visibility: hidden;
-            height: 0;
-            opacity: 0;
+            padding: 12px 10px;
+            display: none;
         }
-        
+        &-content.show {
+            padding-top: 30px;
+            display: inline-block;
+        }
     }
-    }}
+}
