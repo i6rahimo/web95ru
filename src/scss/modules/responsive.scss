@@ -107,6 +107,15 @@
     .google__btn {
         display: none;
     }
+    .help {
+        &__hero {
+            border: none;
+            &-inner {
+                padding: 0;
+            }
+        }
+
+    }
 }
 @media (max-width: 464px) {
     .google {
