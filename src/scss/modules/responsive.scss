@@ -61,6 +61,14 @@
             }
         }
     }
+    .footer {
+        &__items {
+            display: grid;
+            // justify-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 100px;
+        }
+    }
 }
 @media (max-width: 970px) {
     .header {
@@ -98,6 +106,13 @@
         margin-right: 0;
     }
 }
+@media (max-width: 777px) {
+    .footer {
+        &__items {
+            justify-items: center;
+        }
+    }
+}
 @media (max-width: 621px) {
     .review__item:not(:last-child) {
         margin-right: 0;
@@ -125,6 +140,13 @@
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             }
         }
+    }
+    .footer__links-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__links:not(:last-child) {
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 624px) {
